@@ -1,0 +1,85 @@
+\documentclass[a4]{article}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[ngerman]{babel}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\title{Wissenschaftliche Texte mit \LaTeX}
+\author{Hendrik Sauer}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{We're no strangers to love.}\label{sec:first-verse}
+
+You \emph{know} the \textbf{rules} and so do I.
+
+\subsection{A full commitment's what I'm thinking of.}
+
+You \texttt{wouldn't} get this from any other guy.
+
+I just {\color{green} wanna} tell you how\footnote{Fußnote} I'm {\LARGE \color{green} feeling}.
+
+\section*{Gotta make you understand.}
+
+Never gonna
+\begin{itemize}
+    \item Give you up
+    \item let you down
+    \begin{itemize}
+        \item run around and
+        \item desert you
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{rick-astley.jpg}
+    \caption{Mr.\ Astley}
+    \label{fig:enter-label}
+\end{figure}
+
+Never gonna
+\begin{enumerate}
+    \item make you cry
+    \item Say goodbye
+    \begin{enumerate}
+        \item tell a lie
+        \item hurt you
+    \end{enumerate}
+\end{enumerate}
+
+\begin{table}
+    \centering
+    \begin{tabular}{c|c}
+         Never & gonna \\
+         \midrule
+         Give you up & let you down
+    \end{tabular}
+\end{table}
+
+\section{Quick Maths}
+
+Seien \(x, y \in \mathbb{R}\). Es gilt
+\[ |x+y| \leq |x| + |y|. \]
+
+Sei \(z = (z_1, \dots, z_n) \in \mathbb{R}^n\).
+Wir definieren die \(p\)-Norm
+\begin{equation}
+    ||z||_p = \left(\sum_{i=1}^n z_i^p\right)^\frac{1}{p}\label{eq:p-norm}
+\end{equation}
+
+
+\section{Querverweise}
+
+Wie in \autoref{fig:enter-label}, in \autoref{sec:first-verse} und  in \autoref{eq:p-norm} bewiesen is \LaTeX{} 1 nices Tool.
+
+\end{document}
